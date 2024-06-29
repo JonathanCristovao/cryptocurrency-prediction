@@ -65,7 +65,7 @@ The repository is dedicated to the analysis and prediction of cryptocurrency pri
         
 ```
 
-# Example result predict to BTC-USD 
+# Example prediction result for BTC-USD.
 --------
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
