@@ -1,10 +1,10 @@
 # cryptocurrency-prediction
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
-
 The repository is dedicated to the analysis and prediction of cryptocurrency prices using AI techniques for time series.
+
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="assets/img_main.png" />
+</a>
 
 ## Project Organization
 
@@ -39,24 +39,54 @@ The repository is dedicated to the analysis and prediction of cryptocurrency pri
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── cryptocurrency                <- Source code for use in this project.
+└── src                <- Source code for use in this project.
     │
-    ├── __init__.py    <- Makes cryptocurrency a Python module
+    ├── __init__.py    
     │
-    ├── data           <- Scripts to download or generate data
-    │   └── make_dataset.py
+    ├── controllers           
+    │   └── prediction_controller.py
     │
-    ├── features       <- Scripts to turn raw data into features for modeling
-    │   └── build_features.py
+    ├── main        
+    │   └── process_handle.py
+    │   └── constructor
+    │       └── prediction_constructor.py
     │
-    ├── models         <- Scripts to train models and then use trained models to make
-    │   │                 predictions
-    │   ├── predict_model.py
-    │   └── train_model.py
+    ├── models         
+    │   │           
+    │   ├── data_handle.py
+    │   ├── model_builder.py
+    │   ├── model_evaluator.py
+    │   └── model_trainer.py
     │
-    └── visualization  <- Scripts to create exploratory and results oriented visualizations
-        └── visualize.py
+    ├── visualization   
+    │    └── visualization.py
+    │ 
+    └── appy <--- run aplication   
+        
 ```
+
+# Example result predict to BTC-USD 
+--------
+
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="assets/predict_img.png" />
+</a>
 
 --------
 
+
+# How run app 
+
+#### Clone the repo
+```
+https://github.com/JonathanCristovao/cryptocurrency-prediction.git
+```
+#### Install requirements
+```
+pip install -r requirements.txt
+```
+
+#### run app
+```
+python -m app.py
+```

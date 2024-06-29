@@ -2,5 +2,7 @@ black
 flake8
 isort
 pip
+keras==3.4.1
+scikit-learn==1.5.0
+matplotlib==3.9.0
 python-dotenv
--e .
